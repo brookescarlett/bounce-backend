@@ -11,7 +11,7 @@ scene1 = Scene.create(name: 'First Scene')
 
 
 ball1 = Ball.create(x: 80, y: 160, speed: 10, direction: 0, scene_id: scene1.id, note: 261.63, wave_type: 'triangle', delay_time: 0.3, release_time: 0.5)
-ball2 = Ball.create(x: 480, y: 840, speed: 20, direction: 1, scene_id: scene1.id, note: 440.00, wave_type: 'sin', delay_time: 0.7)
+ball2 = Ball.create(x: 480, y: 840, speed: 20, direction: 1, scene_id: scene1.id, note: 440.00, wave_type: 'sine', delay_time: 0.7)
 ball3 = Ball.create(x: 80, y: 400, speed: 5, direction: 0, scene_id: scene1.id, note: 349.23, wave_type: 'triangle', delay_time: 0.5, release_time: 0.1)
 
 block1 = Block.create(x1: 320, y1: 80, x2: 320, y2:240, direction: 0, scene_id: scene1.id)

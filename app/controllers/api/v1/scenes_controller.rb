@@ -40,7 +40,7 @@ class Api::V1::ScenesController < ApplicationController
 
   private
   def scene_params
-   params.require(:scene).permit(:name)
+   params.require(:scene).permit(:name, :balls, :blocks)
   end
 
 
