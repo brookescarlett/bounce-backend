@@ -10,6 +10,17 @@ class Api::V1::ScenesController < ApplicationController
     render json: @scene
   end
 
+  def show
+    @scene = Scene.find(params[:id])
+    render json: @scene 
+  end
+
+  def balls
+    @scene = Scene.find(params[:id])
+    render json: @scene.balls
+  end
+
+
 
   def update
    @scene = Scene.find(params[:id])
