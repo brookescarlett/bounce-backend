@@ -12,7 +12,7 @@ class Api::V1::ScenesController < ApplicationController
 
   def show
     @scene = Scene.find(params[:id])
-    render json: @scene 
+    render json: @scene, include: ['balls', 'blocks', 'sounds']
   end
 
   def balls
