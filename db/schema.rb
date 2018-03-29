@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180329141523) do
+ActiveRecord::Schema.define(version: 20180326191316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20180329141523) do
     t.integer "y"
     t.integer "speed"
     t.integer "direction"
+    t.float "note"
+    t.string "wave_type"
+    t.float "delay_time"
+    t.float "release_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,22 +35,13 @@ ActiveRecord::Schema.define(version: 20180329141523) do
     t.integer "y1"
     t.integer "x2"
     t.integer "y2"
+    t.integer "direction"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "scenes", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sounds", force: :cascade do |t|
-    t.integer "ball_id"
-    t.float "note"
-    t.string "wave_type"
-    t.float "delay_time"
-    t.float "release_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

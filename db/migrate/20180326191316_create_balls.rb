@@ -6,6 +6,10 @@ class CreateBalls < ActiveRecord::Migration[5.1]
       t.integer :y
       t.integer :speed
       t.integer :direction
+      t.float :note
+      t.string :wave_type
+      t.float :delay_time
+      t.float :release_time
       t.timestamps
     end
   end

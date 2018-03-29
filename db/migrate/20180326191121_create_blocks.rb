@@ -6,6 +6,7 @@ class CreateBlocks < ActiveRecord::Migration[5.1]
       t.integer :y1
       t.integer :x2
       t.integer :y2
+      t.integer :direction
       t.timestamps
     end
   end
