@@ -29,7 +29,7 @@ class Api::V1::BallsController < ApplicationController
 
   private
   def ball_params
-   params.require(:ball).permit(:x, :y, :scene_id)
+   params.require(:ball).permit(:x, :y, :scene_id, :speed, :direction, :note, :wave_type, :delay_time, :release_time)
   end
 
 end

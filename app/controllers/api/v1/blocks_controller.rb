@@ -28,6 +28,6 @@ class Api::V1::BlocksController < ApplicationController
 
   private
   def block_params
-   params.require(:block).permit(:x1, :y1, :x2, :y2, :scene_id)
+   params.require(:block).permit(:x1, :y1, :x2, :y2, :direction, :scene_id)
   end
 end
