@@ -6,19 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ball1 = Ball.create(x: 600, y: 380, speed: 10, direction: 0, scene_id: 1)
-# ball2 = Ball.create(x: ,y: ,speed: ,direction:, scene_id:)
-# ball3 = Ball.create(x: ,y: ,speed: ,direction:, scene_id:)
-
-# block1 = Block.create(x1: ,y1:, x2:, y2:, scene_id:)
-# block2 = Block.create(x1: ,y1:, x2:, y2:, scene_id:)
-# block3 = Block.create(x1: ,y1:, x2:, y2:, scene_id:)
-
-sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.3, release_time: 0.5, ball_id: ball1.id)
-sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.5, release_time: 0.5, ball_id: ball1.id)
-# sound2 = Sound.create(note:, wave_type:, delay_time:, release_time:, ball_id: )
-# sound3 = Sound.create(note:, wave_type:, delay_time:, release_time:, ball_id: )
 
 scene1 = Scene.create(name: 'First Scene')
-# scene2 = Scene.create(name:)
-# scene3 = Scene.create(name:)
+
+
+ball1 = Ball.create(x: 80, y: 160, speed: 10, direction: 0, scene_id: scene1.id)
+ball2 = Ball.create(x: 480, y: 840, speed: 20, direction: 1, scene_id: scene1.id)
+ball3 = Ball.create(x: 80, y: 400, speed: 5, direction: 0, scene_id: scene1.id)
+
+block1 = Block.create(x1: 320, y1: 80, x2: 320, y2:240, scene_id: scene1.id)
+block2 = Block.create(x1: 160, y1: 320, x2:160, y2:480, scene_id: scene1.id)
+
+sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.3, release_time: 0.5, ball_id: ball1.id)
+sound2 = Sound.create(note: 440.00, wave_type: 'sin', delay_time: 0.7, release_time: 0.2, ball_id: ball2.id)
+sound3 = Sound.create(note: 349.23, wave_type: 'triangle', delay_time: 0.5, release_time: 0.1, ball_id: ball3.id)
