@@ -14,7 +14,8 @@ ball1 = Ball.create(x: 600, y: 380, speed: 10, direction: 0, scene_id: 1)
 # block2 = Block.create(x1: ,y1:, x2:, y2:, scene_id:)
 # block3 = Block.create(x1: ,y1:, x2:, y2:, scene_id:)
 
-sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.3, release_time: 0.5, ball_id: ball1)
+sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.3, release_time: 0.5, ball_id: ball1.id)
+sound1 = Sound.create(note: 261.63, wave_type: 'triangle', delay_time: 0.5, release_time: 0.5, ball_id: ball1.id)
 # sound2 = Sound.create(note:, wave_type:, delay_time:, release_time:, ball_id: )
 # sound3 = Sound.create(note:, wave_type:, delay_time:, release_time:, ball_id: )
 
